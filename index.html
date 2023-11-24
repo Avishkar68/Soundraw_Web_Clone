@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soundraw</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8bf2a2137d.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8bf2a2137d.js" crossorigin="anonymous"></script>
+</head> 
+
+<body>
+
+  <div class="chat-box" onclick="downarr()"><i class="fa-solid fa-comment fa-xl" style="color: #e0e0e0;"></i></div>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img id="nav-logo-img" src="asset 0.png" alt="">
+      </div>
+      <div class="nav-links">
+        <ul class="nav-tags-container">
+          <li id="nav-tags"><a href="#">Create Music</a></li>
+          <li id="nav-tags"><a href="#">License</a></li>
+          <li id="nav-tags"><a href="#">FAQ</a></li>
+          <li id="nav-tags"><a href="#">API for businesses</a></li>
+          <li id="nav-tags"><a href="#">Pricing</a></li>
+          <li id="nav-tags"><a href="#">Sign in</a></li>
+          <li id="nav-tags"><a href="#"><button id="nav-tags-btn">Sign Up</button></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="main-part-container-holder">
+    <img id="main-part-background1" src="asset 8.svg" alt="">
+    <img id="main-part-background2" src="asset 9.svg" alt="">
+    <div class="main-part-container">
+      <p class="multicolor-text" id="main-part-paragraph">CREATE YOUR BEATS WITH THE POWER OF AI</p>
+      <h1 id="main-part-heading1">Welcome to</h1>
+      <h1 id="main-part-heading2">the AI Music Generation</h1>
+      <button id="main-part-button" role="button">Try it for free</button>
+    </div>
+  </header>
+  <div class="video-section">
+    <video id="myVideo" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="fivio_desktop.mp4" type="video/mp4">
+    </video>
+    <div class="onvideotext">
+      <p id="onvideotext1">ARTIST COLLABRATION:</p>
+      <h1 id="onvideotext2">FIVIO FOREIGN <span style="color: #ffd52e;">X</span> SOUNDRAW</h1>
+      <p id="mute-unmute-btn"><i onclick="unmuteVideo()" class="fa-solid fa-volume-xmark" style="color: #ffffff;"></i>
+      </p>
+      <p id="onvideotext3">[PLAY WITH SOUND]</p>
+    </div>
+  </div>
+  <div class="after-video-section">
+    <p id="after-video-section-text">Generate beats like Fivio Foreign and create your own tracks</p>
+    <button id="after-video-section-button">Generate now</button>
+  </div>
+  <div class="cards-container-wrapper-container-outer">
+    <div class="cards-container-wrapper-container">
+      <div class="cards-container-wrapper cards-container-wrapper-shadow">
+        <div class="cards-container cards-container1">
+          <p id="cards-container-text1">Hip Hop</p>
+        </div>
+      </div>
+      <div class="cards-container-wrapper cards-container-wrapper-shadow">
+        <div class="cards-container cards-container2">
+          <p id="cards-container-text2">Trap</p>
+
+        </div>
+      </div>
+      <div class="cards-container-wrapper cards-container-wrapper-shadow">
+        <div class="cards-container cards-container3">
+          <p id="cards-container-text3">Drill</p>
+
+        </div>
+      </div>
+      <div class="cards-container-wrapper cards-container-wrapper-shadow">
+        <div class="cards-container cards-container4">
+          <p id="cards-container-text4">R&B</p>
+
+        </div>
+      </div>
+      <div class="cards-container-wrapper cards-container-wrapper-shadow">
+        <div class="cards-container cards-container5">
+          <p id="cards-container-text5">Jersey Club</p>
+
+        </div>
+      </div>
+      <div class="cards-container-wrapper cards-container-wrapper-shadow">
+        <div class="cards-container cards-container6">
+          <p id="cards-container-text6">Latin</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="secondary-main-part-container">
+    <div class="secondary-main-part">
+      <div class="secondary-main-part-first-half">
+        <p class="multicolor-text2" id="secondary-main-part-first-half-text1">UNIMAGINABLE POSSIBILITIES</p>
+        <h1 id="secondary-main-part-first-half-text2">Unlimited music</h1>
+        <p id="secondary-main-part-first-half-text3">Simply choose the mood, the genre and the length. Our AI will
+          generate beautiful songs for <br>you.</p>
+        <button id="secondary-main-part-first-half-btn">Explore the possibilities</button>
+      </div>
+      <div class="secondary-main-part-second-half">
+        <div id="secondary-main-part-second-half-img1"></div>
+        <div id="secondary-main-part-second-half-img2"></div>
+        <div id="secondary-main-part-second-half-img3"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="after-secondary-main-part-container">
+    <div class="after-secondary-main-part">
+      <div class="after-secondary-main-part-text-holder">
+        <p class="after-secondary-main-part-text1 multicolor-text3">UNLEASH YOUR CREATIVITY</p>
+        <h1 class="after-secondary-main-part-text2">For Creators and Artists</h1>
+      </div>
+      <div class="after-secondary-main-part-card-holder">
+        <div class="after-secondary-main-part-card1">
+          <div class="after-secondary-main-part-card1-img">
+          </div>
+          <div class="after-secondary-main-part-card1-head">Soundraw for <span>Creators</span></div>
+          <ul class="after-secondary-main-part-card1-list">
+            <li>True royalty-free</li>
+            <li>The license is forever</li>
+            <li>No copyright strikes</li>
+          </ul>
+          <button class="after-secondary-main-part-card1-btn">Learn more</button>
+        </div>
+        <div class="after-secondary-main-part-card2">
+          <div class="after-secondary-main-part-card2-img">
+            <button id="after-secondary-main-part-card2-img-btn">New</button>
+          </div>
+          <div class="after-secondary-main-part-card2-head">Soundraw for <span>Artists</span></div>
+          <ul class="after-secondary-main-part-card2-list">
+            <li>A simple license</li>
+            <li>Monetize your songs</li>
+          </ul>
+          <button class="after-secondary-main-part-card2-btn">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="customize-section-container">
+    <div class="customize-section">
+      <p class="customize-section-container-text1 multicolor-text4">ADJUST THE MUSIC TO YOUR NEEDS</p>
+      <h1 class="customize-section-container-text2">Customize the songs</h1>
+      <p class="customize-section-container-text3">Make an intro shorter or change the position of the chorus. Customize
+        your song in just a few clicks.</p>
+      <div class="video">
+        <video style="border-radius: 10px;" id="myVideo2" autoplay="autoplay" muted="muted" loop="loop">
+          <source style="border-radius: 10px;" src="customize_song.mp4" type="video/mp4">
+        </video>
+      </div>
+      <button class="customize-section-container-btn">Start customizing</button>
+    </div>
+  </div>
+
+
+
+  <div class="after-customize-section-container">
+    <div class="aftere-customize-section-container-text1">
+      <p class="multicolor-text5">UNIQUE MUSIC FOR UNIQUE PEOPLE</p>
+    </div>
+    <div class="aftere-customize-section-container-text2">
+      <h1>Tell your story with the perfect soundtrack</h1>
+    </div>
+    <div class="after-customize-section-container-profile-pics">
+      <div class="outer1 outer-img">
+        <div onclick="textadd1(); glowadd1(); text2add1(); text3add1()" class=" img1">
+          <p id="img1-text">Fivio Foreign</p>
+        </div>
+      </div>
+      <div class="outer2 opa-less">
+        <div onclick="textadd2(); glowadd2(); text2add2(); text3add2()" class="img2">
+          <p id="img2-text">Drex Lee</p>
+
+        </div>
+      </div>
+      <div class="outer3 opa-less">
+        <div onclick="textadd3(); glowadd3(); text2add3(); text3add3()" class="img3">
+          <p id="img3-text">YCImaging</p>
+
+        </div>
+      </div>
+      <div class="outer4 opa-less">
+        <div onclick="textadd4(); glowadd4(); text2add4(); text3add4()" class="img4">
+          <p id="img4-text">Premiere Gal</p>
+        </div>
+      </div>
+    </div>
+    <div class="after-customize-section-container-text34-block">
+      <!-- <img class="fa-quote-left" src="quote-left-solid.svg" alt=""> -->
+      <svg class="fa-quote-left" xmlns="http://www.w3.org/2000/svg" height="7em" viewBox="0 0 448 512">
+        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <style>
+          svg {
+            fill: #7688a7
+          }
+        </style>
+        <path
+          d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
+      </svg>
+
+      <div class="change">
+        <p class="after-customize-section-container-text3">SOUNDRAW's AI was a real curiosity for me. I have a unique
+          style, so <span class="multicolor-text5">I wanted see if the AI could keep up.</span> Know what I'm sayin'?
+        </p>
+        <!-- <p class="after-customize-section-container-text3 text3-1-extendcss">As a filmmaker, sound is key to my videos.<span class="multicolor-text5">Soundraw has enabled me to create the sound for the mood for any videos that I'm making,</span> cutting out hours of searching for music to place. The future of sound for film is here!</p> -->
+        <!-- <p class="after-customize-section-container-text3 text3-2-extendcss"><span class="multicolor-text5">Soundraw is truly the future of music,</span> cutting out hours of searching for music to place. The future of sound for film is here!</p> -->
+        <!-- <p class="after-customize-section-container-text3 text3-3-extendcss">If you're a Video Editor who needs to customize a background track,<span class="multicolor-text5"> Soundraw's technology is super impressive and helpful!</span></p> -->
+      </div>
+      <div class="change2">
+        <p class="after-customize-section-container-text4-block-text1">Fivio Foreign</p>
+      </div>
+      <div class="change3">
+        <p class="after-customize-section-container-text4-block-text2">Hip Hop Artist</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="innerCursor"></div>
+    <div class="outerCursor"></div> -->
+
+  <div class="soundraw-pricing-section" id="soundraw-pricing-section">
+    <div class="soundraw-pricing-section-inner">
+      <div class="soundraw-pricing-section-inner-navbar-outer">
+        <nav class="soundraw-pricing-section-inner-navbar">
+          <div class="soundraw-pricing-section-inner-navbar-first-section">
+            <p class="soundraw-pricing-section-inner-navbar-first-section-text1 multicolor-text">WE COVER ALL YOUR NEEDS
+            </p>
+            <h1 class="soundraw-pricing-section-inner-navbar-first-section-text2">Our pricing</h1>
+          </div>
+          <div class="soundraw-pricing-section-inner-navbar-second-section">
+            <p class="soundraw-pricing-section-inner-navbar-second-section-text1 multicolor-text">UP TO 25% OFF</p>
+            <div class="soundraw-pricing-section-inner-navbar-second-section-btn">
+              <button onclick="btn_switch(), monthly()" class="soundraw-pricing-section-inner-navbar-second-section-btn1">Monthly</button>
+              <button onclick="btn_switch2(), anually()" class="soundraw-pricing-section-inner-navbar-second-section-btn2 background-pricing-btn">Annual</button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="soundraw-pricing-section-inner-cards">
+              <div class="soundraw-pricing-sesction-inner-cards-1">
+                    <div class="soundraw-pricing-section-inner-cards-1-box1">
+                      <p>Free</p>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-1-box2">
+                      <h1 >$0</h1>
+                      <p>forever</p>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-1-box3">
+                      <button>Join for free</button>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-1-box4">
+                      <p>Try out Soundraw for free</p>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-1-box5">
+                      <ul>
+                        <li id="pricing-list-section1-1"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Generate unlimited songs</li>
+                        <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Bookmark songs</li>
+                      </ul>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-1-box6">
+                        <button class="after-secondary-main-part-card2-btn">Learn more</button>
+                    </div>
+              </div>
+              <div class="soundraw-pricing-sesction-inner-cards-2">
+                    <div class="soundraw-pricing-section-inner-cards-2-box1">
+                      <p class="multicolor-text3 ">Creator Plan</p>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-1-box2">
+                      <h1 id="soundraw-pricing-section-inner-cards-1-box2">$16<sup>.99</sup></h1>
+                      <p>/month</p>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-3-box3">
+                      <button>Subscribe</button>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-1-box4">
+                      <p>Background music <br>for your content</p>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-1-box5">
+                      <ul>
+                        <li id="pricing-list-section1-1"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Videos, podcasts, games & other</li>
+                        <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Social Media</li>
+                        <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;TV, Radio, etc</li><br>
+                        <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Unlimited downloads</li><br>
+                        <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Royalty-free</li>
+                        <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;No copyright strikes</li>
+                        <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Commercial and personal use</li>
+                      </ul>
+                    </div>
+                    <div class="soundraw-pricing-section-inner-cards-1-box6">
+                        <button class="after-secondary-main-part-card2-btn">Learn more</button>
+                    </div>
+              </div>
+
+
+              <div class="soundraw-pricing-sesction-inner-cards-3">
+                      <div class="soundraw-pricing-section-inner-cards-1-box1">
+                        <p class="multicolor-text3">Artist Plan</p>
+                      </div>
+                      <div class="soundraw-pricing-section-inner-cards-1-box2">
+                        <h1 id="soundraw-pricing-section-inner-cards-3-box2">$29<sup>.99</sup></h1>
+                        <p>/month</p>
+                      </div>
+                      <div class="soundraw-pricing-section-inner-cards-3-box3">
+                        <button>Subscribe</button>
+                      </div>
+                      <div class="soundraw-pricing-section-inner-cards-1-box4">
+                        <p>Add vocals to our beats<br>and make songs</p>
+                      </div>
+                      <div class="soundraw-pricing-section-inner-cards-1-box5">
+                        <ul>
+                          <li id="pricing-list-section1-1"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Distribute to Spotify, Apple Music, etc</li>
+                          <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Unlimited audio streams</li>
+                          <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;You keep the royalties</li><br>
+                          <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Up to 30 downloads per month</li><br>
+                          <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Simple, transparent license</li>
+                          <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;No copyright strikes</li>
+                          <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Keep the license forever</li>
+                        </ul>
+                      </div>
+                      <div class="soundraw-pricing-section-inner-cards-1-box6">
+                          <button class="after-secondary-main-part-card2-btn">Learn more</button>
+                      </div>
+              </div>
+        </div>
+
+        <div class="soundraw-pricing-section-inner-text">
+          <p>You cannot use the same account on more than 1 device at the same time</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+
+  <div class="gradient-background"></div>
+
+
+  <div class="api-section">
+    <div class="api-section-inner">
+      <div class="api-section-inner-box1">
+        <p class="api-section-inner-box1-text1 multicolor-text">PUSH BEYOND YOUR LIMITS</p>
+        <h1 class="api-section-inner-box1-text2">Access SOUNDRAW's API</h1>
+        <p class="api-section-inner-box1-text3">For companies looking into integrating SOUNDRAW's revolutionary <br>AI technology into their product. Ultra easy integration,<br> uncomplicated sign up process, ready-to-use in a snap.</p>
+      </div>
+
+      <div class="api-section-inner-box2 hello-1 ">
+        <div class="soundraw-pricing-sesction-inner-cards-3 hello-2">
+          <div class="soundraw-pricing-section-inner-cards-1-box1 hello-2-1 ">
+            <p>Artist Plan</p>
+          </div>
+          <div class="soundraw-pricing-section-inner-cards-1-box2 hello-2-2">
+            <p>from </p>
+            <h1 id="soundraw-pricing-section-inner-cards-3-box2">$29<sup>.99</sup></h1>
+            <p>/month</p>
+          </div>
+          <div class="soundraw-pricing-section-inner-cards-3-box3 hello-4">
+            <button>Subscribe</button>
+          </div>
+          <div class="soundraw-pricing-section-inner-cards-1-box4 hello-2-3">
+            <p>Power your platform with SOUNDRAW</p>
+          </div>
+          <div class="soundraw-pricing-section-inner-cards-1-box5 hello-2-4">
+            <ul>
+              <li id="pricing-list-section1-1"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Distribute to Spotify, Apple Music, etc</li>
+              <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Unlimited audio streams</li>
+              <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;You keep the royalties</li><br>
+              <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Up to 30 downloads per month</li><br>
+              <li id="pricing-list-section1-2"><i class="fa-sharp fa-solid fa-check fa-lg" style="color: #fffb93;"></i>&#160;&#160;&#160;Simple, transparent license</li>
+            </ul>
+          </div>
+          <div class="soundraw-pricing-section-inner-cards-1-box6 hello-2-5">
+              <button class="after-secondary-main-part-card2-btn">Learn more</button>
+          </div>
+      </div>
+      <div class="border-under-api-sectoin"></div>
+    </div>
+  </div>
+</div>
+<div class="trusted-by-outer">
+  <div class="tag-line-1">
+    <p class="multicolor-text3">AI MUSIC FROM SOUNDRAW</p>
+  </div>
+  <div class="tag-line-2">
+    <p>Trusted by</p>
+  </div>
+  <div class="logo-link">
+    <div class="logo-link-1">
+      <div><svg data-v-8d41fad4="" xmlns="http://www.w3.org/2000/svg" width="200" height="64" viewBox="0 0 200 64" fill="none"><a data-v-8d41fad4="" href="https://www.canva.com/" target="_blank" rel="noopener"><mask data-v-8d41fad4="" id="mask0_716_343" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="64" style="mask-type: luminance;"><path data-v-8d41fad4="" d="M198.25 43.6827C198 43.6827 197.5 43.9327 197.5 44.4327C195.504 50.1748 192.758 53.6708 190.508 53.6708C189.258 53.6708 188.762 52.1709 188.762 49.9248C188.762 44.1827 192.258 31.9486 194.004 26.4565C194.254 25.7065 194.254 25.2065 194.254 24.7105C194.254 23.2105 193.254 22.2144 191.258 22.2144C189.012 22.2144 186.266 23.2144 184.016 27.4565C183.266 23.7105 180.52 21.9644 177.024 21.9644C172.778 21.9644 168.786 24.7105 165.54 28.9565C162.294 33.2025 158.298 34.6985 155.552 33.9486C157.548 28.7065 158.548 24.9605 158.548 22.2144C158.548 17.7184 156.302 14.9724 152.806 14.9724C147.314 14.9724 144.317 20.2145 144.317 25.7104C144.317 29.9564 146.314 34.1986 150.31 36.4485C146.814 44.4366 141.571 51.6787 139.821 51.6787C137.325 51.6787 136.575 39.4445 136.825 30.4564C136.825 25.4643 137.325 25.2144 137.325 23.7144C137.325 22.7144 136.825 22.2144 134.579 22.2144C129.337 22.2144 127.587 26.7104 127.337 31.9525C127.337 33.9486 126.837 35.9485 126.337 37.6946C124.091 45.6827 119.595 51.6787 116.599 51.6787C115.099 51.6787 114.853 50.1787 114.853 48.4327C114.853 42.6906 118.099 35.4485 118.099 29.4565C118.099 24.9605 116.103 22.2144 112.357 22.2144C108.111 22.2144 102.119 27.4565 96.877 37.1946C98.6231 29.7025 99.3731 22.4644 94.131 22.4644C92.881 22.4644 91.8849 22.7144 90.8849 23.2144C90.135 23.4644 89.635 24.2144 89.885 24.9605C90.385 32.9486 83.3929 53.1747 76.9008 53.1747C75.6509 53.1747 75.1548 51.9248 75.1548 49.9287C75.1548 44.1866 78.6508 32.2025 80.3969 26.4604C80.6469 25.7104 80.6469 25.2104 80.6469 24.4644C80.6469 22.9644 79.6469 22.2183 77.6508 22.2183C75.4048 22.2183 72.6587 23.2183 70.4088 27.4604C69.6588 23.7144 66.9128 21.9683 63.4167 21.9683C57.4247 21.9683 50.9326 28.2104 48.1866 36.1985C44.4405 46.9366 36.4524 57.4208 25.9643 57.4208C16.4762 57.4208 11.4842 49.4326 11.4842 36.9485C10.2342 19.2223 23.4683 4.4882 33.2064 4.4882C37.9485 4.4882 40.1984 7.48423 40.1984 11.9802C40.1984 17.4723 37.2024 20.2184 37.2024 22.2183C37.2024 22.9683 37.7024 23.4683 38.7024 23.4683C42.9484 23.4683 47.9405 18.4762 47.9405 11.4842C47.9405 4.4921 42.4484 6.34173e-06 32.7103 6.34173e-06C16.4801 -0.0117122 0 16.2184 0 37.1907C0 53.9208 8.23812 63.905 22.4722 63.905C32.2103 63.905 40.6984 56.413 45.1944 47.4249C45.6944 54.6669 48.9405 58.659 54.1825 58.659C58.6785 58.659 62.4207 55.913 65.1667 51.167C66.1667 56.1591 69.1627 58.409 72.6587 58.409C76.9047 58.409 80.4008 55.663 83.8929 50.667C83.8929 54.663 84.6429 58.159 88.1389 58.159C89.6389 58.159 91.6349 57.909 91.8849 56.413C95.381 41.6828 104.369 29.6986 106.865 29.6986C107.615 29.6986 107.865 30.4486 107.865 31.4447C107.865 35.4407 105.119 43.6788 105.119 48.9209C105.119 54.663 107.615 58.409 112.611 58.409C118.103 58.409 123.845 51.667 127.341 41.6789C128.591 50.917 131.087 58.409 135.083 58.409C139.825 58.409 148.567 48.1709 153.809 37.4368C155.806 37.6868 159.052 37.6868 161.798 35.4407C160.548 38.6867 159.802 42.1828 159.802 45.6788C159.802 55.6669 164.544 58.4129 168.79 58.4129C173.286 58.4129 177.028 55.6669 179.774 50.9209C180.774 55.1669 183.02 58.1629 187.266 58.1629C194.008 58.1629 200 51.1709 200 45.6788C199.746 44.6827 198.996 43.6827 198.25 43.6827ZM58.1746 53.1708C55.4286 53.1708 54.4286 50.4248 54.4286 46.4288C54.4286 39.4367 59.1707 27.4526 64.4167 27.4526C66.6628 27.4526 67.4128 30.1986 67.4128 33.4447C67.4128 40.4367 62.9206 53.1708 58.1746 53.1708ZM151.556 31.9486C149.81 29.9525 149.31 27.4526 149.31 24.9565C149.31 21.9605 150.31 19.7145 151.556 19.7145C152.806 19.7145 153.302 20.9644 153.302 22.7105C153.306 25.4565 152.306 29.7025 151.556 31.9486ZM172.782 53.1708C170.036 53.1708 169.036 49.9248 169.036 46.4288C169.036 39.6867 173.778 27.4526 179.024 27.4526C181.27 27.4526 182.02 30.1986 182.02 33.4447C182.02 40.4367 177.524 53.1708 172.782 53.1708Z" fill="white"/></mask> <g data-v-8d41fad4="" mask="url(#mask0_716_343)"><path data-v-8d41fad4="" d="M200.496 -3.50757H-0.75V67.1512H200.496V-3.50757Z" fill="#EAF2FB"/></g></a></svg></div>
+    </div>
+    <div class="logo-link-2">
+      <div><svg data-v-8d41fad4="" xmlns="http://www.w3.org/2000/svg" width="200" height="44" viewBox="0 0 200 44" fill="none"><a data-v-8d41fad4="" href="https://www.captions.ai/" target="_blank" rel="noopener"><g data-v-8d41fad4="" clip-path="url(#clip0_716_349)"><mask data-v-8d41fad4="" id="mask0_716_349" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="44" style="mask-type: luminance;"><path data-v-8d41fad4="" d="M199.109 0.452637H0V43.4526H199.109V0.452637Z" fill="white"/></mask> <g data-v-8d41fad4="" mask="url(#mask0_716_349)"><path data-v-8d41fad4="" d="M63.343 9.1536V11.9197C64.3905 10.8442 65.6423 9.99874 67.0213 9.43519C68.4004 8.87163 69.8777 8.60175 71.3626 8.64243C78.9817 8.64243 84.3927 14.1205 84.3927 21.9557C84.3927 29.7908 78.9817 35.2627 71.3626 35.2627C69.8777 35.3033 68.4004 35.0337 67.0213 34.4701C65.6423 33.9066 64.3905 33.0612 63.343 31.9857V43.4526H58.3264V9.17768L63.343 9.1536ZM63.343 21.9557C63.343 27.1209 66.5992 30.5546 71.3626 30.5546C76.126 30.5546 79.3821 27.1209 79.3821 21.9557C79.3821 16.7903 76.1731 13.3026 71.3626 13.3026C66.5521 13.3026 63.343 16.7843 63.343 21.9557Z" fill="#EAF2FB"/> <path data-v-8d41fad4="" d="M105.019 0.452637H110.03V5.56968H105.019V0.452637ZM105.019 9.1535H110.03V34.7516H105.019V9.1535Z" fill="#EAF2FB"/> <path data-v-8d41fad4="" d="M114.069 21.9555C114.069 14.1745 119.486 8.64233 127.105 8.64233C134.724 8.64233 140.136 14.1745 140.136 21.9555C140.136 29.7365 134.724 35.2625 127.105 35.2625C119.486 35.2625 114.069 29.7846 114.069 21.9555ZM135.125 21.9555C135.125 16.7842 131.916 13.3025 127.105 13.3025C122.295 13.3025 119.08 16.7842 119.08 21.9555C119.08 27.1268 122.342 30.5544 127.105 30.5544C131.868 30.5544 135.125 27.1268 135.125 21.9555Z" fill="#EAF2FB"/> <path data-v-8d41fad4="" d="M144.121 9.1537H149.132V11.4568C149.962 10.5443 150.972 9.82196 152.096 9.33691C153.218 8.85187 154.43 8.61503 155.65 8.64253C161.615 8.64253 165.659 13.0985 165.659 19.3942V34.7519H160.643V19.3942C160.643 15.7864 158.388 13.3027 154.932 13.3027C151.322 13.3027 149.115 15.8104 149.115 19.3942V34.7519H144.104L144.121 9.1537Z" fill="#EAF2FB"/> <path data-v-8d41fad4="" d="M54.3464 35.2689H41.3104C38.7304 35.27 36.208 34.4897 34.0623 33.0266C31.9167 31.5635 30.2442 29.4835 29.2563 27.0495C28.2684 24.6155 28.0097 21.9371 28.5129 19.3529C29.0159 16.7686 30.258 14.3947 32.0823 12.5317C33.9066 10.6686 36.231 9.39993 38.7616 8.8862C41.292 8.37247 43.9147 8.63694 46.298 9.64577C48.6814 10.6546 50.7183 12.3625 52.1509 14.5538C53.5835 16.7451 54.3475 19.3209 54.3464 21.9557V35.2689ZM41.3104 14.0484C40.276 14.0193 39.2464 14.2023 38.2823 14.5863C37.3184 14.9705 36.4396 15.5481 35.6979 16.2848C34.9562 17.0217 34.3666 17.9031 33.9639 18.8767C33.5614 19.8501 33.3541 20.896 33.3541 21.9528C33.3541 23.0095 33.5614 24.0555 33.9639 25.0289C34.3666 26.0024 34.9562 26.8838 35.6979 27.6206C36.4396 28.3575 37.3184 28.935 38.2823 29.3192C39.2464 29.7033 40.276 29.8861 41.3104 29.857H49.0472V21.9557C49.0456 19.86 48.2302 17.8507 46.7797 16.3683C45.3293 14.8859 43.3623 14.0517 41.3104 14.0484Z" fill="#EAF2FB"/> <path data-v-8d41fad4="" d="M19.8838 26.7419C18.5414 29.1472 16.1157 30.5544 13.0362 30.5544C8.27275 30.5544 5.0166 27.1209 5.0166 21.9555C5.0166 16.7903 8.27275 13.3025 13.0362 13.3025C16.1157 13.3025 18.5472 14.74 19.8897 17.1631H25.2833C23.5522 11.9919 18.9595 8.64233 13.0362 8.64233C5.41707 8.64233 0 14.1745 0 21.9555C0 29.7365 5.41707 35.2625 13.0362 35.2625C19.0066 35.2625 23.5757 31.9433 25.2949 26.7419H19.8838Z" fill="#EAF2FB"/> <path data-v-8d41fad4="" d="M100.597 13.8137V9.1535H92.7838V0.452637H87.7672V26.1527C87.7672 31.8351 90.5759 34.7516 96.2402 34.7516H100.603V30.0434H96.5934C94.038 30.0434 92.7838 28.7624 92.7838 26.1527V13.8137H100.597Z" fill="#EAF2FB"/> <path data-v-8d41fad4="" d="M192.062 13.0201V9.23193H190.766V8.63062H193.951V9.23193H192.685V13.0201H192.062Z" fill="#EAF2FB"/> <path data-v-8d41fad4="" d="M198.485 13.0201V9.32204L197.042 13.0201H196.666L195.217 9.32204V13.0201H194.593V8.64233H195.576L196.86 11.9977L198.155 8.64233H199.138V13.0201H198.485Z" fill="#EAF2FB"/> <path data-v-8d41fad4="" d="M169.946 29.7242L173.897 27.4933C175.192 30.0971 177.271 31.0473 180.074 31.0473C182.983 31.0473 185.214 29.8447 185.214 27.5477C185.214 22.0877 170.624 26.2247 170.624 16.303C170.624 11.745 174.568 8.40161 180.126 8.40161C184.837 8.40161 188.07 10.6325 189.683 13.6511L185.732 15.9362C184.643 13.6513 182.564 12.8574 180.226 12.8574C177.889 12.8574 175.763 14.1323 175.763 16.2008C175.763 21.5043 190.354 17.6319 190.354 27.4393C190.354 32.3761 185.686 35.503 180.28 35.503C175.558 35.503 171.918 33.5966 169.946 29.7242Z" fill="#EAF2FB"/></g></g> <defs data-v-8d41fad4=""><clipPath data-v-8d41fad4="" id="clip0_716_349"><rect data-v-8d41fad4="" width="200" height="43" fill="white" transform="translate(0 0.452637)"/></clipPath></defs></a></svg></div>
+    </div>
+    <div class="logo-link-3">
+      <div><svg data-v-8d41fad4="" xmlns="http://www.w3.org/2000/svg" wi  dth="200" height="53" viewBox="0 0 200 53" fill="none"><a data-v-8d41fad4="" href="https://www.forbes.com/sites/bernardmarr/2023/02/28/beyond-chatgpt-14-mind-blowing-ai-tools-everyone-should-be-trying-out-now/?sh=3708f0bc7a1b" target="_blank" rel="noopener"><g data-v-8d41fad4="" clip-path="url(#clip0_716_341)"><path data-v-8d41fad4="" d="M19.2544 4.93837H23.6356C26.3038 4.54067 29.0286 4.89033 31.5142 5.94938C34.6325 7.84756 36.8943 10.9035 37.817 14.4652C38.4704 16.3316 38.4704 16.3316 40.0461 15.6706H41.2759V0.894351H0.0383955V3.49963H1.7294C2.46424 3.49448 3.19088 3.65597 3.85595 3.97224C4.52101 4.2885 5.10759 4.7515 5.5726 5.32722C7.14831 7.89362 7.41733 10.7711 7.41733 25.7417C7.41733 41.6456 7.07145 45.5341 5.5726 47.5172C5.20258 48.0271 4.72351 48.4457 4.17116 48.742C3.61882 49.0383 3.00746 49.2045 2.38275 49.2282C0.0383956 49.6559 0.0383955 49.617 0.0383955 50.6669C-0.091249 51.018 -0.091249 51.4046 0.0383955 51.7557H26.0568C26.229 51.4122 26.3188 51.0326 26.3188 50.6475C26.3188 50.2624 26.229 49.8827 26.0568 49.5393C25.4267 49.3619 24.7844 49.2319 24.1352 49.1504C23.433 49.0659 22.7389 48.9228 22.0599 48.7227C21.0876 48.0045 20.3174 47.042 19.8254 45.9305C19.3334 44.8189 19.1365 43.5966 19.2544 42.3844C18.8701 39.818 18.6779 35.113 18.6779 31.2245V28.1526H20.2152C22.1305 28.0933 24.0446 28.3027 25.9031 28.7748C26.7935 29.3314 27.5514 30.0801 28.1227 30.9674C28.694 31.8547 29.0647 32.8586 29.2083 33.9076L29.5542 35.113H31.8985V17.887H29.7463L29.4004 19.5591C29.2549 20.6318 28.8627 21.655 28.2553 22.5464C27.6479 23.4379 26.8422 24.1727 25.9031 24.6919C24.9936 24.9657 24.0355 25.0321 23.0976 24.8863H18.6779V20.6867C18.6779 16.3316 18.9085 7.15481 19.0622 5.71607L19.2544 4.93837ZM199.116 35.774C197.299 32.8157 194.466 30.6414 191.161 29.6691C188.627 28.8677 186.284 27.5437 184.281 25.7806C183.831 25.3395 183.493 24.7936 183.299 24.1903C183.105 23.5871 183.059 22.945 183.167 22.3199C183.17 21.0938 183.654 19.919 184.512 19.0536C185.094 18.4371 185.83 17.9921 186.642 17.7661C187.455 17.54 188.312 17.5415 189.124 17.7704C190.804 18.2548 192.323 19.1901 193.521 20.477C194.718 21.764 195.549 23.3547 195.926 25.0807C196.541 26.8305 196.618 26.8305 197.732 26.3639L198.424 26.0917V16.4094L197.925 16.1761C194.141 14.8316 190.128 14.276 186.126 14.5429C182.68 14.6313 179.391 16.0179 176.902 18.4314C175.774 19.5003 174.89 20.8059 174.312 22.2567C173.735 23.7076 173.478 25.2686 173.559 26.8305C173.58 29.2185 174.517 31.5048 176.172 33.2076C178.001 35.0274 180.245 36.363 182.706 37.0961C188.663 39.4681 190.392 40.9846 190.392 43.7454C190.418 44.9097 190.051 46.0481 189.353 46.9738C188.654 47.8994 187.665 48.5573 186.549 48.8393C185.207 49.1376 183.817 49.1376 182.475 48.8393C180.718 48.1494 179.149 47.0449 177.899 45.6178C176.649 44.1908 175.754 42.4823 175.288 40.6346L174.789 39.3903H174.097C173.766 39.4152 173.442 39.494 173.136 39.6236H172.752V50.6669H173.405C176.001 51.5408 178.68 52.1403 181.399 52.4556H185.242C186.909 52.5794 188.584 52.4217 190.2 51.989C192.251 51.606 194.167 50.6867 195.758 49.3224C197.349 47.9581 198.56 46.1963 199.27 44.212C199.728 43.1037 199.964 41.9139 199.962 40.7124C200.113 39.0197 199.821 37.3165 199.116 35.774ZM162.913 15.6706C160.61 14.6923 158.129 14.2177 155.632 14.278C153.135 14.3383 150.678 14.9322 148.424 16.0205C146.305 17.0692 144.427 18.5558 142.911 20.3842C141.395 22.2127 140.275 24.3425 139.623 26.6361C138.792 29.1381 138.44 31.7776 138.586 34.4131C138.558 35.847 138.674 37.2801 138.932 38.6904C139.552 42.1582 141.207 45.3507 143.673 47.8392C146.14 50.3277 149.3 51.9929 152.729 52.6112C154.962 52.8958 157.221 52.8958 159.454 52.6112C161.771 52.1979 163.989 51.34 165.988 50.0836C167.641 49.1459 169.04 47.8104 170.061 46.1952C169.996 45.9417 169.88 45.7043 169.722 45.4972C169.563 45.29 169.365 45.1174 169.139 44.9897C168.7 45.1504 168.286 45.373 167.909 45.6508C165.998 46.9254 163.74 47.5644 161.453 47.4784C159.934 47.5822 158.412 47.343 156.996 46.7781C155.58 46.2131 154.306 45.3366 153.267 44.212C152.462 43.4562 151.799 42.5607 151.307 41.5679C150.112 39.1505 149.469 36.493 149.423 33.7909V32.2744H170.715V31.4967C170.762 30.7197 170.762 29.9406 170.715 29.1636C170.707 26.418 169.981 23.7233 168.611 21.3534C167.241 18.9835 165.275 17.0228 162.913 15.6706ZM152.191 29.1247H149.5V26.8305C150.384 20.9589 152.575 17.4593 155.265 17.4593C157.955 17.4593 159.108 20.92 159.608 27.2583V29.047H157.302L152.191 29.1247ZM96.9254 14.3874C95.5974 14.3353 94.2773 14.6158 93.0822 15.204C90.4847 16.4803 88.3867 18.603 87.1253 21.2311L86.6256 22.1643V14.3874H86.4335C85.9723 14.3874 71.7525 17.2649 71.2913 17.4593C70.8301 17.6537 70.9838 17.6926 70.9838 18.3925C70.9838 19.0924 70.9838 19.2091 71.2913 19.248L72.7901 19.5591C73.2099 19.5695 73.6219 19.6764 73.9947 19.8718C74.3676 20.0672 74.6917 20.3459 74.9423 20.6867C75.9031 21.9699 76.0953 24.2252 76.0953 33.8298C76.2851 38.1536 76.1051 42.486 75.5572 46.7784C75.4283 47.4257 75.1039 48.0164 74.6289 48.4692C74.1539 48.9219 73.5517 49.2143 72.9054 49.3059L71.5987 49.5781H71.0991V50.6669C70.9597 51.0296 70.9597 51.4319 71.0991 51.7946H92.5826V50.6669C92.6571 50.2948 92.6571 49.9114 92.5826 49.5393C91.2891 49.4882 90.0028 49.3191 88.7394 49.0337C88.0514 48.6696 87.4885 48.1032 87.1249 47.4091C86.7614 46.715 86.6141 45.9257 86.7025 45.1453C86.395 42.8899 86.2413 36.2795 86.3182 31.2245C86.3951 26.1695 86.3182 25.8584 86.7409 25.5084C88.027 24.5108 89.6183 24.0016 91.2375 24.0697C92.7637 24.1034 94.2621 24.4891 95.6187 25.1974C96.089 25.4616 96.5935 25.6579 97.1176 25.7806C97.1176 25.7806 100.961 16.3705 100.961 15.9428C100.469 15.3645 99.8424 14.9195 99.1378 14.6479C98.4332 14.3763 97.6728 14.2868 96.9254 14.3874ZM71.0223 30.719C70.8881 27.9403 70.0996 25.2343 68.7225 22.8264C67.3454 20.4184 65.4195 18.3783 63.1053 16.876C60.3551 15.3749 57.2953 14.5471 54.1716 14.4593C51.0479 14.3716 47.9474 15.0261 45.1191 16.3705C41.1202 18.504 38.1009 22.1308 36.7025 26.4806C35.2581 31.3505 35.2581 36.5423 36.7025 41.4123C37.4597 44.0739 38.875 46.4962 40.8147 48.4505C43.2305 50.8355 46.3456 52.3636 49.6925 52.8056C51.841 52.9874 54.0006 52.9874 56.1491 52.8056C56.9397 52.6839 57.7225 52.5151 58.4934 52.3001C61.6217 51.4147 64.436 49.6462 66.6071 47.2016C68.7782 44.757 70.2164 41.7374 70.7532 38.496C71.1369 35.9226 71.2272 33.3132 71.0223 30.719ZM55.0346 50.1614C51.1914 51.328 48.309 47.5561 47.3482 39.6236C46.9953 35.4706 46.9953 31.2946 47.3482 27.1416C48.1168 20.7645 50.0768 17.5371 53.113 17.5371C53.7255 17.4986 54.3382 17.6092 54.8999 17.8595C55.4615 18.1098 55.9558 18.4926 56.3412 18.9758C58.9162 21.5811 60.1844 26.7528 60.1844 34.5297C60.5042 38.931 59.8205 43.3479 58.186 47.4395C57.4643 48.6328 56.3476 49.5284 55.0346 49.967V50.1614ZM124.212 15.1651C123.128 15.0239 122.03 15.0239 120.945 15.1651C118.864 15.1633 116.806 15.6142 114.912 16.4872L113.72 16.9927V8.55466C113.928 5.707 113.928 2.84766 113.72 0C113.259 0 98.578 2.83859 98.3474 2.95525C98.234 3.24233 98.234 3.56251 98.3474 3.8496C98.3474 4.66618 98.3474 4.62729 100.077 5.01614C100.562 5.12632 101.029 5.30984 101.46 5.56053C102.211 6.2743 102.71 7.21639 102.882 8.24358C103.32 11.2028 103.462 14.1991 103.305 17.1871V51.328L104.343 51.5613C105.88 51.9112 110.223 52.65 111.645 52.8056C114.484 53.0341 117.337 53.0341 120.177 52.8056C123.328 52.4799 126.333 51.2902 128.865 49.3647C131.398 47.4393 133.364 44.8511 134.55 41.8789C135.258 39.9714 135.748 37.9884 136.011 35.9685C136.239 33.2323 136.149 30.4785 135.742 27.7638C135.329 24.7207 134.002 21.8796 131.939 19.6258C129.877 17.3721 127.179 15.8147 124.212 15.1651ZM114.143 49.5004C114.143 48.9949 113.759 31.9633 113.835 25.1585V19.8313L114.95 19.5591C115.702 19.4501 116.465 19.4501 117.217 19.5591C118.049 19.4735 118.886 19.6646 119.6 20.1034C121.036 21.1057 122.227 22.4242 123.086 23.9599C123.945 25.4955 124.448 27.2083 124.558 28.9692C124.838 31.8007 124.838 34.6534 124.558 37.485C124.328 41.6003 122.761 45.5236 120.1 48.6449C119.345 49.3707 118.396 49.8573 117.371 50.0448C116.596 50.1812 115.802 50.1812 115.027 50.0448C114.297 50.0448 114.297 49.8114 114.297 49.5004H114.143Z" fill="#EAF2FB"/></g> <defs data-v-8d41fad4=""><clipPath data-v-8d41fad4="" id="clip0_716_341"><rect data-v-8d41fad4="" width="200" height="53" fill="white"/></clipPath></defs></a></svg></div>
+    </div>
+  </div>
+</div>
+
+<div class="before-footer">
+  <div class="before-footer-inner">
+  <div class="before-footer-1">
+    <img src="team_632w-93cd47ad7c123f532730.digested.jpg" alt="grp=img">
+  </div>
+  <div class="before-footer-2">
+    <div class="two-text-1">
+      <p class="multicolor-text3">PASSIONATE ABOUT MUSIC</p>
+    </div>
+    <div class="two-text-2">
+      <p>We respect artists</p>
+    </div>
+    <div class="two-text-3">
+      <p>We hold utmost respect for the creative efforts of others and we understand the importance of legal rights and ownership when it comes to AI-generated music. We want to assure our users that all the music generated through our platform is created using proprietary algorithms and data sets that have been created in-house by our music producers.</p>
+    </div>
+    <div class="two-text-4">
+      <p>As a result, we retain full copyright ownership of all the music employed in training our AI technology.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="footer-section">
+  <div class="footer-section-inner">
+    <div class="footer-1">
+      <ul>
+        <li><a>About Us</a></li>
+        <li><a>Careers</a></li>
+        <li><a>Privacy policy</a></li>
+        <li><a>Terms of Service</a></li>
+        <li><a>GDPR Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-2">
+      <ul>
+        <li><a>Language:</a></li>
+        <li><a>English</a></li>
+        <li id="helo"><a>日本語</a></li>
+        <li id="helo-2"><a>©SOUNDRAW</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <script src="https://kit.fontawesome.com/8bf2a2137d.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
